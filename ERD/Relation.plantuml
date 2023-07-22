@@ -1,0 +1,161 @@
+@startuml
+entity MyItem {
+  作成者
+  createdbyname
+  createdbyyominame
+  作成日
+  作成者 (代理)
+  createdonbehalfbyname
+  createdonbehalfbyyominame
+  インポート シーケンス番号
+  修正者
+  modifiedbyname
+  modifiedbyyominame
+  修正日
+  修正者 (代理)
+  modifiedonbehalfbyname
+  modifiedonbehalfbyyominame
+  レコード作成日
+  所有者
+  owneridname
+  owneridtype
+  owneridyominame
+  所属部署
+  owningbusinessunitname
+  所有チーム
+  所有ユーザー
+  状態
+  statecodename
+  ステータス
+  statuscodename
+  タイム ゾーン規則のバージョン番号
+  UTC 変換タイム ゾーン コード
+  バージョン番号
+  Amount
+  ApprovalStatus
+  ya_approvalstatusname
+  Category
+  ya_categoryname
+  Description
+  MyItem
+  Name
+}
+
+entity MySubItem {
+  作成者
+  createdbyname
+  createdbyyominame
+  作成日
+  作成者 (代理)
+  createdonbehalfbyname
+  createdonbehalfbyyominame
+  インポート シーケンス番号
+  修正者
+  modifiedbyname
+  modifiedbyyominame
+  修正日
+  修正者 (代理)
+  modifiedonbehalfbyname
+  modifiedonbehalfbyyominame
+  レコード作成日
+  所有者
+  owneridname
+  owneridtype
+  owneridyominame
+  所属部署
+  owningbusinessunitname
+  所有チーム
+  所有ユーザー
+  状態
+  statecodename
+  ステータス
+  statuscodename
+  タイム ゾーン規則のバージョン番号
+  UTC 変換タイム ゾーン コード
+  バージョン番号
+  Attachment
+  ya_attachment_name
+  MyItem
+  ya_myitemname
+  MySubItem
+  Name
+}
+
+entity Category {
+  作成者
+  createdbyname
+  createdbyyominame
+  作成日
+  作成者 (代理)
+  createdonbehalfbyname
+  createdonbehalfbyyominame
+  インポート シーケンス番号
+  修正者
+  modifiedbyname
+  modifiedbyyominame
+  修正日
+  修正者 (代理)
+  modifiedonbehalfbyname
+  modifiedonbehalfbyyominame
+  レコード作成日
+  所有者
+  owneridname
+  owneridtype
+  owneridyominame
+  所属部署
+  owningbusinessunitname
+  所有チーム
+  所有ユーザー
+  状態
+  statecodename
+  ステータス
+  statuscodename
+  タイム ゾーン規則のバージョン番号
+  UTC 変換タイム ゾーン コード
+  バージョン番号
+  Category
+  Name
+}
+
+entity Tag {
+  作成者
+  createdbyname
+  createdbyyominame
+  作成日
+  作成者 (代理)
+  createdonbehalfbyname
+  createdonbehalfbyyominame
+  インポート シーケンス番号
+  修正者
+  modifiedbyname
+  modifiedbyyominame
+  修正日
+  修正者 (代理)
+  modifiedonbehalfbyname
+  modifiedonbehalfbyyominame
+  レコード作成日
+  所有者
+  owneridname
+  owneridtype
+  owneridyominame
+  所属部署
+  owningbusinessunitname
+  所有チーム
+  所有ユーザー
+  状態
+  statecodename
+  ステータス
+  statuscodename
+  タイム ゾーン規則のバージョン番号
+  UTC 変換タイム ゾーン コード
+  バージョン番号
+  Name
+  Tag
+}
+
+
+
+MyItem ||--|{ MySubItem
+Category ||--|{ MyItem
+Tag }|--|{ MyItem
+@enduml

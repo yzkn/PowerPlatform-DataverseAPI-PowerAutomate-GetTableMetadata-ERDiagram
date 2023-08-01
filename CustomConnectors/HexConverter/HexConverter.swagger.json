@@ -1,0 +1,73 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "HexConverter",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "api.contoso.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "string",
+                  "description": "content"
+                }
+              }
+            }
+          }
+        },
+        "summary": "ToHexString",
+        "description": "ToHexString",
+        "operationId": "ToHexString",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "string",
+                  "description": "content"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
